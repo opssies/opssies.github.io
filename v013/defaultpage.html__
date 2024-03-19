@@ -1,0 +1,230 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:lt="http://www.liquid-technologies.com/json-schema-doc-gen" xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+      <title>Docs for JSON Schema OPSSIES BI V2 Interoperability Schema - version 0.13</title>
+      <!-- saved from url=(0014)about:internet --><script src="Scripts/jquery-3.1.1.min.js"></script><link href="Content/bootstrap.min.css" rel="stylesheet"></link><script src="Scripts/bootstrap.min.js"></script><link href="Content/JsonSchemaDocs.css" rel="stylesheet"></link><script src="Scripts/JsonSchemaDocs.js"></script><script type="text/javascript">
+         <!--
+                            $(function () {
+                            // ensure the page opens within its frameset
+                            ensureInFrame('', '');
+                            });
+                        --></script></head>
+   <body style="margin:10px">
+      <div class="container">
+         <div class="heading-row">
+            <div class="row">
+               <div class="col-md-12">
+                  <h1>OPSSIES BI V2 Interoperability Schema - version 0.13</h1>
+               </div>
+            </div>
+         </div>
+         <div class="property-row">
+            <div class="row is-flex">
+               <div class="col-md-2 property-heading">
+                  <h3>Description</h3>
+               </div>
+               <div class="col-md-10">
+                  <div class="valign-center">
+                     <div>OPSSIES BI V2 Interoperability Schema - version 0.13</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="property-row">
+            <div class="row is-flex">
+               <div class="col-md-2 property-heading">
+                  <h3>Root Schema</h3>
+               </div>
+               <div class="col-md-10">
+                  <div class="valign-center">
+                     <div class="row">
+                        <div class="col-md-12"><a href="file-ng-msp-opssies-schema-multi-refs-v13_json.html" title="/">ng-msp-opssies-schema-multi-refs-v13.json</a></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="property-row">
+            <div class="row is-flex">
+               <div class="col-md-2 property-heading">
+                  <h3>Schemas</h3>
+               </div>
+               <div class="col-md-10">
+                  <div class="valign-center">
+                     <div class="row">
+                        <div class="col-md-4"><a href="property-autonomoussystemnumbers.html" title="/properties/events/properties/event/items[1]/properties/scopes/items[0]/properties/autonomousSystemNumbers">autonomousSystemNumbers</a></div>
+                        <div class="col-md-8"><a href="property-autonomoussystemnumbers.html" title="/properties/events/properties/event/items[1]/properties/scopes/items[0]/properties/autonomousSystemNumbers">/properties/events/properties/event/items[1]/properties/scopes/items[0]/properties/autonomousSystemNumbers</a></div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-4"><a href="property-dates.html" title="/properties/events/properties/event/items[0]/properties/dates">dates</a></div>
+                        <div class="col-md-8"><a href="property-dates.html" title="/properties/events/properties/event/items[0]/properties/dates">/properties/events/properties/event/items[0]/properties/dates</a></div>
+                     </div>
+                     <!-- <div class="row">
+                        <div class="col-md-4"><a href="property-dates-1.html" title="/properties/events/properties/event/items[1]/properties/dates">dates</a></div>
+                        <div class="col-md-8"><a href="property-dates-1.html" title="/properties/events/properties/event/items[1]/properties/dates">/properties/events/properties/event/items[1]/properties/dates</a></div>
+                     </div> -->
+                     <div class="row">
+                        <div class="col-md-4"><a href="property-domains.html" title="/properties/events/properties/event/items[1]/properties/scopes/items[0]/properties/domains">domains</a></div>
+                        <div class="col-md-8"><a href="property-domains.html" title="/properties/events/properties/event/items[1]/properties/scopes/items[0]/properties/domains">/properties/events/properties/event/items[1]/properties/scopes/items[0]/properties/domains</a></div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-4"><a href="property-event.html" title="/properties/events/properties/event">event</a></div>
+                        <div class="col-md-8"><a href="property-event.html" title="/properties/events/properties/event">/properties/events/properties/event</a></div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-4"><a href="property-events.html" title="/properties/events">events</a></div>
+                        <div class="col-md-8"><a href="property-events.html" title="/properties/events">/properties/events</a></div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-4"><a href="property-forest.html" title="/properties/events/properties/event/items[0]/properties/scope/properties/forest">forest</a></div>
+                        <div class="col-md-8"><a href="property-forest.html" title="/properties/events/properties/event/items[0]/properties/scope/properties/forest">/properties/events/properties/event/items[0]/properties/scope/properties/forest</a></div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-4"><a href="property-functionalcontexts.html" title="/properties/events/properties/event/items[0]/properties/functionalContexts">functionalContexts</a></div>
+                        <div class="col-md-8"><a href="property-functionalcontexts.html" title="/properties/events/properties/event/items[0]/properties/functionalContexts">/properties/events/properties/event/items[0]/properties/functionalContexts</a></div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-4"><a href="property-functionalcontexts-1.html" title="/properties/events/properties/event/items[1]/properties/functionalContexts">functionalContexts</a></div>
+                        <div class="col-md-8"><a href="property-functionalcontexts-1.html" title="/properties/events/properties/event/items[1]/properties/functionalContexts">/properties/events/properties/event/items[1]/properties/functionalContexts</a></div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-4"><a href="property-functionalcontexts-2.html" title="/properties/events/properties/event/items[1]/properties/scopes/items[0]/properties/functionalContexts">functionalContexts</a></div>
+                        <div class="col-md-8"><a href="property-functionalcontexts-2.html" title="/properties/events/properties/event/items[1]/properties/scopes/items[0]/properties/functionalContexts">/properties/events/properties/event/items[1]/properties/scopes/items[0]/properties/functionalContexts</a></div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-4"><a href="property-outcome.html" title="/properties/events/properties/event/items[0]/properties/outcome">outcome</a></div>
+                        <div class="col-md-8"><a href="property-outcome.html" title="/properties/events/properties/event/items[0]/properties/outcome">/properties/events/properties/event/items[0]/properties/outcome</a></div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-4"><a href="property-outcome-1.html" title="/properties/events/properties/event/items[1]/properties/outcome">outcome</a></div>
+                        <div class="col-md-8"><a href="property-outcome-1.html" title="/properties/events/properties/event/items[1]/properties/outcome">/properties/events/properties/event/items[1]/properties/outcome</a></div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-4"><a href="property-scope.html" title="/properties/events/properties/event/items[0]/properties/scope">scope</a></div>
+                        <div class="col-md-8"><a href="property-scope.html" title="/properties/events/properties/event/items[0]/properties/scope">/properties/events/properties/event/items[0]/properties/scope</a></div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-4"><a href="property-scopes.html" title="/properties/events/properties/event/items[1]/properties/scopes">scopes</a></div>
+                        <div class="col-md-8"><a href="property-scopes.html" title="/properties/events/properties/event/items[1]/properties/scopes">/properties/events/properties/event/items[1]/properties/scopes</a></div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-4"><a href="property-stakeholderid.html" title="/properties/events/properties/event/items[0]/properties/stakeholders/items[0]/properties/stakeholderId">stakeholderId</a></div>
+                        <div class="col-md-8"><a href="property-stakeholderid.html" title="/properties/events/properties/event/items[0]/properties/stakeholders/items[0]/properties/stakeholderId">/properties/events/properties/event/items[0]/properties/stakeholders/items[0]/properties/stakeholderId</a></div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-4"><a href="property-stakeholderid-1.html" title="/properties/events/properties/event/items[1]/properties/stakeholders/items[0]/properties/stakeholderId">stakeholderId</a></div>
+                        <div class="col-md-8"><a href="property-stakeholderid-1.html" title="/properties/events/properties/event/items[1]/properties/stakeholders/items[0]/properties/stakeholderId">/properties/events/properties/event/items[1]/properties/stakeholders/items[0]/properties/stakeholderId</a></div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-4"><a href="property-stakeholderid-2.html" title="/properties/events/properties/stakeholders/items[0]/properties/stakeholderId">stakeholderId</a></div>
+                        <div class="col-md-8"><a href="property-stakeholderid-2.html" title="/properties/events/properties/stakeholders/items[0]/properties/stakeholderId">/properties/events/properties/stakeholders/items[0]/properties/stakeholderId</a></div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-4"><a href="property-stakeholderid-3.html" title="/properties/events/properties/stakeholders/items[1]/properties/stakeholderId">stakeholderId</a></div>
+                        <div class="col-md-8"><a href="property-stakeholderid-3.html" title="/properties/events/properties/stakeholders/items[1]/properties/stakeholderId">/properties/events/properties/stakeholders/items[1]/properties/stakeholderId</a></div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-4"><a href="property-stakeholdernametypes.html" title="/properties/events/properties/event/items[0]/properties/stakeholders/items[0]/properties/stakeholderNameTypes">stakeholderNameTypes</a></div>
+                        <div class="col-md-8"><a href="property-stakeholdernametypes.html" title="/properties/events/properties/event/items[0]/properties/stakeholders/items[0]/properties/stakeholderNameTypes">/properties/events/properties/event/items[0]/properties/stakeholders/items[0]/properties/stakeholderNameTypes</a></div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-4"><a href="property-stakeholdernametypes-1.html" title="/properties/events/properties/event/items[1]/properties/stakeholders/items[0]/properties/stakeholderNameTypes">stakeholderNameTypes</a></div>
+                        <div class="col-md-8"><a href="property-stakeholdernametypes-1.html" title="/properties/events/properties/event/items[1]/properties/stakeholders/items[0]/properties/stakeholderNameTypes">/properties/events/properties/event/items[1]/properties/stakeholders/items[0]/properties/stakeholderNameTypes</a></div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-4"><a href="property-stakeholdernametypes-2.html" title="/properties/events/properties/stakeholders/items[0]/properties/stakeholderNameTypes">stakeholderNameTypes</a></div>
+                        <div class="col-md-8"><a href="property-stakeholdernametypes-2.html" title="/properties/events/properties/stakeholders/items[0]/properties/stakeholderNameTypes">/properties/events/properties/stakeholders/items[0]/properties/stakeholderNameTypes</a></div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-4"><a href="property-stakeholdernametypes-3.html" title="/properties/events/properties/stakeholders/items[1]/properties/stakeholderNameTypes">stakeholderNameTypes</a></div>
+                        <div class="col-md-8"><a href="property-stakeholdernametypes-3.html" title="/properties/events/properties/stakeholders/items[1]/properties/stakeholderNameTypes">/properties/events/properties/stakeholders/items[1]/properties/stakeholderNameTypes</a></div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-4"><a href="property-stakeholders.html" title="/properties/events/properties/event/items[0]/properties/stakeholders">stakeholders</a></div>
+                        <div class="col-md-8"><a href="property-stakeholders.html" title="/properties/events/properties/event/items[0]/properties/stakeholders">/properties/events/properties/event/items[0]/properties/stakeholders</a></div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-4"><a href="property-stakeholders-1.html" title="/properties/events/properties/event/items[1]/properties/stakeholders">stakeholders</a></div>
+                        <div class="col-md-8"><a href="property-stakeholders-1.html" title="/properties/events/properties/event/items[1]/properties/stakeholders">/properties/events/properties/event/items[1]/properties/stakeholders</a></div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-4"><a href="property-stakeholders-2.html" title="/properties/events/properties/stakeholders">stakeholders</a></div>
+                        <div class="col-md-8"><a href="property-stakeholders-2.html" title="/properties/events/properties/stakeholders">/properties/events/properties/stakeholders</a></div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-4"><a href="property-subnetipv4s.html" title="/properties/events/properties/event/items[1]/properties/scopes/items[0]/properties/subnetIpV4s">subnetIpV4s</a></div>
+                        <div class="col-md-8"><a href="property-subnetipv4s.html" title="/properties/events/properties/event/items[1]/properties/scopes/items[0]/properties/subnetIpV4s">/properties/events/properties/event/items[1]/properties/scopes/items[0]/properties/subnetIpV4s</a></div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-4"><a href="property-subnetipv6s.html" title="/properties/events/properties/event/items[1]/properties/scopes/items[0]/properties/subnetIpV6s">subnetIpV6s</a></div>
+                        <div class="col-md-8"><a href="property-subnetipv6s.html" title="/properties/events/properties/event/items[1]/properties/scopes/items[0]/properties/subnetIpV6s">/properties/events/properties/event/items[1]/properties/scopes/items[0]/properties/subnetIpV6s</a></div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-4"><a href="property-technicalcontexts.html" title="/properties/events/properties/event/items[0]/properties/technicalContexts">technicalContexts</a></div>
+                        <div class="col-md-8"><a href="property-technicalcontexts.html" title="/properties/events/properties/event/items[0]/properties/technicalContexts">/properties/events/properties/event/items[0]/properties/technicalContexts</a></div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-4"><a href="property-technicalcontexts-1.html" title="/properties/events/properties/event/items[1]/properties/scopes/items[0]/properties/technicalContexts">technicalContexts</a></div>
+                        <div class="col-md-8"><a href="property-technicalcontexts-1.html" title="/properties/events/properties/event/items[1]/properties/scopes/items[0]/properties/technicalContexts">/properties/events/properties/event/items[1]/properties/scopes/items[0]/properties/technicalContexts</a></div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-4"><a href="property-technicalcontexts-2.html" title="/properties/events/properties/event/items[1]/properties/technicalContexts">technicalContexts</a></div>
+                        <div class="col-md-8"><a href="property-technicalcontexts-2.html" title="/properties/events/properties/event/items[1]/properties/technicalContexts">/properties/events/properties/event/items[1]/properties/technicalContexts</a></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="property-row">
+            <div class="row is-flex">
+               <div class="col-md-2 property-heading">
+                  <h3>Definitions</h3>
+               </div>
+               <div class="col-md-10">
+                  <div class="valign-center">
+                     <div class="row">
+                        <div class="col-md-12"><a href="def-datetype.html" title="/definitions/dateType">dateType</a></div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-12"><a href="def-eventanalysistype.html" title="/definitions/eventAnalysisType">eventAnalysisType</a></div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-12"><a href="def-eventtype.html" title="/definitions/eventType">eventType</a></div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-12"><a href="def-functionalcontextcategory.html" title="/definitions/functionalContextCategory">functionalContextCategory</a></div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-12"><a href="def-stakeholderidtype.html" title="/definitions/stakeholderIdType">stakeholderIdType</a></div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-12"><a href="def-stakeholdernametype.html" title="/definitions/stakeholderNameType">stakeholderNameType</a></div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-12"><a href="def-stakeholderroletype.html" title="/definitions/stakeholderRoleType">stakeholderRoleType</a></div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-12"><a href="def-stakeholdertype.html" title="/definitions/stakeholderType">stakeholderType</a></div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-12"><a href="def-technicalcontextcategory.html" title="/definitions/technicalContextCategory">technicalContextCategory</a></div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-12"><a href="def-tlp.html" title="/definitions/tlp">tlp</a></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="property-row">
+            <div class="row">
+               <div class="col-md-12">
+                  Documentation for OPSSIES BI V2 Interoperability Schema - version 0.13<br/>
+                  </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
