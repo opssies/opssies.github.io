@@ -1,0 +1,172 @@
+{
+    "events": {
+        "stakeholders": [
+            {
+                "stakeholderId": {
+                    "stakeholderIdType": 4,
+                    "__text": "identifiant_siren_ex"
+                },
+                "stakeholderNameTypes": [
+                    {
+                        "stakeholderNameType": 1,
+                        "__text": "raison_sociale_abregee_ex"
+                    },
+                    {
+                        "stakeholderNameType": 2,
+                        "__text": "raison_sociale_ex"
+                    }
+                ],
+                "stakeholderType": 3,
+                "stakeholderRoleType": 2
+            },
+            {
+                "stakeholderId": {
+                    "stakeholderIdType": 5,
+                    "__text": "187512751"
+                },
+                "stakeholderNameTypes": [
+                    {
+                        "stakeholderNameType": 1,
+                        "__text": "ANS"
+                    },
+                    {
+                        "stakeholderNameType": 2,
+                        "__text": "Agence du Numérique en Santé"
+                    }
+                ],
+                "stakeholderType": 2,
+                "stakeholderRoleType": 3
+            },
+            {
+                "stakeholderId": {
+                    "stakeholderIdType": 3,
+                    "__text": "750712184"
+                },
+                "stakeholderNameTypes": [
+                    {
+                        "stakeholderNameType": 1,
+                        "__text": "AP-HP"
+                    },
+                    {
+                        "stakeholderNameType": 2,
+                        "__text": "Assistance Publique des Hôpitaux de Paris"
+                    }
+                ],
+                "stakeholderType": 2,
+                "stakeholderRoleType": 1
+            }
+        ],
+        "event": [
+            {
+                "stakeholders": [
+                    {
+                        "stakeholderId": [
+                            {
+                                "stakeholderIdType": 2,
+                                "__text": "930100037"
+                            }
+                        ],
+                        "stakeholderNameTypes": [
+                            {
+                                "stakeholderNameType": 1,
+                                "__text": "AVICENNE APHP"
+                            },
+                            {
+                                "stakeholderNameType": 2,
+                                "__text": "HOPITAL UNIVERSITAIRE PARIS SITE AVICENNE APHP"
+                            }
+                        ],
+                        "stakeholderType": 1,
+                        "stakeholderRoleType": 4
+                    }
+                ],
+                "functionalContexts": [
+                    {
+                        "functionalContextCategory": 71,
+                        "__text": "portail extranet ps"
+                    },
+                    {
+                        "functionalContextCategory": 73,
+                        "__text": "site institutionnel"
+                    }
+                ],
+                "technicalContexts": [
+                    {
+                        "technicalContextCategory": 13,
+                        "__text": "vlan4094"
+                    },
+                    {
+                        "technicalContextCategory": 13,
+                        "__text": "vlan4095"
+                    }
+                ],
+                "dates": [
+                    {
+                        "dateType": 7,
+                        "__text": "20240115-141742"
+                    }
+                ],
+                "scopes": [
+                    {
+                        "functionalContexts": [
+                            {
+                                "functionalContextCategory": 71,
+                                "__text": "portail extranet ps",
+                                "isPersonalData": false,
+                                "isPersonalHealthcareData": false,
+                                "userCount": 25
+                            },
+                            {
+                                "functionalContextCategory": 73,
+                                "__text": "site institutionnel",
+                                "isPersonalData": false,
+                                "isPersonalHealthcareData": false,
+                                "userCount": 40
+                            }
+                        ],
+                        "technicalContexts": [
+                            {
+                                "technicalContextCategory": 13,
+                                "__text": "vlan4094",
+                                "isDynamic": false,
+                                "isAuthenticatable": false,
+                                "isOnCloud": false
+                            },
+                            {
+                                "technicalContextCategory": 13,
+                                "__text": "vlan4095",
+                                "isDynamic": false,
+                                "isAuthenticatable": false,
+                                "isOnCloud": false
+                            }
+                        ],
+                        "autonomousSystemNumbers": [
+                            "AS3215",
+                            "AS15557",
+                            "AS5410"
+                        ],
+                        "domains": [
+                            "corp1.example-ght.fr",
+                            "corp2.example-ght.fr",
+                            "corp3.example-ght.fr"
+                        ],
+                        "subnetIpV4s": [
+                            "xxx.xxx.xxx.xxx/n",
+                            "xxx.xxx.xxx.xxx/n"
+                        ],
+                        "subnetIpV6s": [
+                            "xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx/n",
+                            "xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx/n"
+                        ]
+                    }
+                ],
+                "outcome": {
+                    "level": 1
+                },
+                "tlp": "amber",
+                "eventAnalysisType": 5,
+                "eventType": 29
+            }
+        ]
+    }
+}
