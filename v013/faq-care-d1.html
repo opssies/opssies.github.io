@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>FAQ</title>
+</head>
+<body>
+<header class="cd-header flex flex-column flex-center">
+  <div class="text-component text-center">
+    <h1>FAQ OPSSIES 2 Interoperability Schema</h1>
+    <!-- <p>👈 <a class="cd-article-link" href="">Article &amp; Download</a></p> -->
+  </div>
+</header>
+
+<section class="cd-faq js-cd-faq container max-width-md margin-top-lg margin-bottom-lg">
+	<ul class="cd-faq__categories">
+		<li><a class="cd-faq__category cd-faq__category-selected truncate" href="#basics">Basics | Fondamentaux</a></li>
+		<li><a class="cd-faq__category truncate" href="#identifiers">Identifiers | Identifiants</a></li>
+		<li><a class="cd-faq__category truncate" href="#outcomes"></a>Outcomes | Bilans</li>
+	</ul> <!-- cd-faq__categories -->
+
+	<div class="cd-faq__items">
+		<ul id="basics" class="cd-faq__group">
+			<li class="cd-faq__title"><h2>Basics | Fondamentaux</h2></li>
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>Où télécharger le dernier schéma ?</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+            <p>Le dernier schéma est disponible depuis le bandeau gauche : Root Schema | Schema racine / Download </p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>
+
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>Est-il nécessaire d'inclure dans les instances l'objet Definitions issu du schéma ?</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+            <p>L'inclusion des définitions n'est pas obligatoire mais recommandée. Elle lève toute ambiguïté sur le sens des codes, hors connexion, et garantit la cohérence des contenus si les codes devaient évoluer.</p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>
+
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>Est-il nécessaire d'inclure dans les instances l'objet ExtractionDate, leur horodatage étant déjà précisé via le protocole de communication retenu ?</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+            <p>L'inclusion de l'objet ExtractionDate valorisé est recommandée à des fins de contrôles complémentaires.</p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>
+
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>La structure générale du schéma racine évoluera-t-elle significativement ?</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+            <p>Non. Elle embarque une approche événementielle répondant aux modalités socles d'alimentation de l'entrepôt de données. En revanche, des objets directement associés à des volets métiers peuvent évoluer.</p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>
+			
+		</ul> <!-- cd-faq__group -->
+
+		<ul id="identifiers" class="cd-faq__group">
+			<li class="cd-faq__title"><h2>Identifiers | Identifiants</h2></li>
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>Comment identifier l'industriel réalisant l'audit ?</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+            <p>[M] Indiquer le code 4 pour introduire le SIREN du tiers industriel réalisant l'audit, associé au code 3 [thirdParty] indiqué dans l'attribut stakeholderType, et au code 2 [serviceProvider] indiqué dans l'attribut stakeholderRoleType
+et/ou
+[M] Indiquer le code 5 pour introduire le SIRET du tiers industriel réalisant l'audit, associé au code 3 [thirdParty] indiqué dans l'attribut stakeholderType, et au code 2 [serviceProvider] indiqué dans l'attribut stakeholderRoleType.
+L’identifiant disponible conditionne ici le qualifiant retenu. Dans le cas d’une unité opérationnelle rattachée à un siège, préciser le SIRET associé à ladite unité. Source complémentaire au CDC : OPSSIES BI V2 Interoperability Schema - version 0.13 / Définitions / stakeholderIdType / profil CaRE D1</p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>
+
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>Hors annexes, le nom du tableau des noms des stakeholders est "stakeholderNameTypes", mais dans sa description en annexe page 26 du CDC ANS CaRe D1 v097, le nom est "stakeholderName"</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+            <p>.
+[M] Indiquer le code 2 pour introduire la raison sociale complète de l'entité
+et
+[R] Indiquer le code 1 pour introduire la raison sociale abrégée de l'entité
+Il s’agit effectivement d’une omission dans le CDC, non bloquante. Cet item sera ajouté dans le v098 du CDC en collaboration avec l’ANS. Source complémentaire au CDC : OPSSIES BI V2 Interoperability Schema - version 0.13 / Définitions / stakeholderNameType / profil CaRE D1</p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>
+
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>Le stakeholderIdType du GHT est défini comme étant 6 (Identifiant GHT), mais le code 6 n'existe pas dans l'annexe / Page 13 du CDC ANS CaRE D1 v097 ; le FINESS juridique est utilisé à sa place.</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+            <p>Le code 6 existe bel et bien dans le profil général, mais le CDC diffusé par l’ANS privilégie légitimement l’usage du code 3 introduisant le FINESS juridique associé au GHT. En pratique, le code 6 permet d’introduire un « trigramme indexé » produit par le bureau PF3 de la DGOS, et exploité par d’autres acteurs institutionnels (par exemple l’ANSSI). L’usage dudit identifiant n’est pas généralisé.
+Source complémentaire au CDC : OPSSIES BI V2 Interoperability Schema - version 0.13 / Définitions / stakeholderIdType / profil CaRE D1</p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>
+			
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>"events.stakeholders" devrait être "events.event.stakeholder" pour être cohérent avec le reste du document.</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+            <p>Le profil général autorise la déclaration d’acteurs communs à l’ensemble des événements, à la racine « events » à des fins de simplification de la structure du contenu émis. Le CDC ANS CaRE D1 v097 le rappelle ainsi, mais privilégie la déclaration des acteurs au niveau de chaque événement. Ce point pourra être éclairci dans une prochaine version du CDC CaRE D1.
+</p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>			
+			
+			
+		</ul> <!-- cd-faq__group -->
+
+		<ul id="outcomes" class="cd-faq__group">
+			<li class="cd-faq__title"><h2>Outcomes | Bilans</h2></li>
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>"outcome" n'a pas de champ "score" dans le CDC ANS CaRE D1 v097</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+            <p>Le profil général inclut effectivement l’élément « score », mais ce dernier n’est pas attendu dans le cadre du profil D1, limité à la transmission d’un niveau d’appréciation  (« level »). L’exemple incluant l’élément « score » sera retiré pour lever toute ambiguïté.</p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>
+
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>Le champ "score" est "Résultat chiffré" sans explication du calcul. Est-ce la somme des CVSS ? </span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+            <p>Il faut ici contacter le CERT-Santé, le profil général et sa déclinaison pour CaRE D1 ne préjugeant pas des modalités de calculs internes, étant axés sur la description de l’enveloppe et du message</p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>
+
+		</ul> <!-- cd-faq__group -->
+
+
+	</div> <!-- cd-faq__items -->
+
+	<a href="#0" class="cd-faq__close-panel text-replace">Close</a>
+  
+  <div class="cd-faq__overlay" aria-hidden="true"></div>
+</section> <!-- cd-faq -->
+<script src="assets/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+<script src="assets/js/main.js"></script> 
+</body>
+</html>
