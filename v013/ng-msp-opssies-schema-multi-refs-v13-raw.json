@@ -1,0 +1,1161 @@
+{
+   "license":[
+      "Copyright (c) 2024, French Ministry of Health and Prevention [MSP/DGOS/PF5:schema and global codes, MSP/DNS with ANS:CaRE D1 attributes and codes]",
+      "Copyright (c) 2023, French National Cyber Security Agency [ANSSI] for eventType attribute labels, based on RÉFÉRENTIEL DE COMPÉTENCES CYBER POUR LES PRESTATAIRES (RCCP)",
+	  "Copyright (c) 2022, first.org [FIRST] for tlp attribute codes",
+	  "All rights reserved.",
+      "",
+      "Redistribution and use in source and binary forms, with or without modification, are permitted provided that the ",
+      "following conditions are met:",
+      "1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following ",
+      "   disclaimer.",
+      "2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the ",
+      "   following disclaimer in the documentation and/or other materials provided with the distribution.",
+      "3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote ",
+      "   products derived from this software without specific prior written permission.",
+      "",
+      "THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS 'AS IS' AND ANY EXPRESS OR IMPLIED WARRANTIES, ",
+      "INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE ",
+      "DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, ",
+      "SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR ",
+      "SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, ",
+      "WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE ",
+      "OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
+   ],	
+  "$schema": "http://json-schema.org/draft-04/schema#",
+   "id":"ng-msp-opssies-schema-multi-refs-v0_13.json",
+   "title":"OPSSIES BI V2 Interoperability Schema - version 0.13",
+   "type":"object",
+   "extractionDate":"YYYYMMDD-HHMMSS",
+   "definitions":{
+      "eventType":{
+         "type":"integer",
+         "enum":[
+            1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61
+         ],
+         "referenceList":[
+            "1;IDENTIFIER/Gestion des actifs/Connaissance des actifs physiques et logiciels",
+            "2;IDENTIFIER/Gestion des actifs/Messagerie et protocoles",
+            "3;IDENTIFIER/Gestion des actifs/Gestion des identités et des accès",
+            "4;IDENTIFIER/Gestion des actifs/Mots de passe",
+            "5;IDENTIFIER/Gestion des actifs/Sauvegarde",
+            "6;IDENTIFIER/Gestion des actifs/Téléphonie",
+            "7;IDENTIFIER/Gestion des actifs/Chiffrement et protection des secrets, hachage",
+            "8;IDENTIFIER/Environnement métier/Connaissance écosystème",
+            "9;IDENTIFIER/Gouvernance/Connaissance des normes et standards",
+            "11;IDENTIFIER/Gouvernance/Obligations du prestataire-risques client",
+            "10;IDENTIFIER/Gouvernance/Connaissance juridique et réglementaire",
+            "12;IDENTIFIER/Gouvernance/Recommandations de base",
+            "13;IDENTIFIER/Appréciation des risques/Identification",
+            "14;IDENTIFIER/Appréciation des risques/Typologie des attaquants",
+            "15;IDENTIFIER/Appréciation des risques/Gestion des vulnérabilités",
+            "16;IDENTIFIER/Stratégie de gestion des risques/Gestion de crise",
+            "17;IDENTIFIER/Gestion des risques de la chaîne approvisionnement/Relation client",
+            "18;IDENTIFIER/Gestion des risques de la chaîne approvisionnement/Anticipation",
+            "19;PROTÉGER/Gestion des identités et contrôle accès/Chiffrement et protection des secrets, hachage",
+            "20;PROTÉGER/Gestion des identités et contrôle accès/Sécurisation",
+            "21;PROTÉGER/Sensibilisation et formation/Recommandations de base",
+            "22;PROTÉGER/Sensibilisation et formation/Relation client",
+            "23;PROTÉGER/Sécurité des données/Sécurité physique",
+            "24;PROTÉGER/Sécurité des données/Téléphonie",
+            "25;PROTÉGER/Sécurité des données/Architecture",
+            "26;PROTÉGER/Sécurité des données/Sécurisation",
+            "27;PROTÉGER/Sécurité des données/Sécurisation/Audit technique/AD/ADS",
+            "28;PROTÉGER/Sécurité des données/Sécurisation/Audit technique/Exposition Internet/Cybersurveillance",
+            "29;PROTÉGER/Sécurité des données/Sécurisation/Audit technique/Next-Gen",
+            "60;PROTÉGER/Sécurité des données/Sécurisation/Audit technique/Exposition Internet/SILENE",
+            "61;PROTÉGER/Sécurité des données/Sécurisation/Audit technique/Messagerie",
+            "30;PROTÉGER/Sécurité des données/Antivirus",
+            "31;PROTÉGER/Sécurité des données/Administration systèmes",
+            "32;PROTÉGER/Sécurité des données/Disponibilité",
+            "33;PROTÉGER/Processus et procédures de protection des informations/Procédure interne",
+            "34;PROTÉGER/Maintenance/MCO-MCS",
+            "35;PROTÉGER/Technologie de protection/Connaissance des solutions et technologies de sécurisation existantes",
+            "36;DETECTER/Anomalies et événements/Identification",
+            "37;DETECTER/Anomalies et événements/Gestion des vulnérabilités",
+            "38;DETECTER/Surveillance continue de la sécurité/Analyse",
+            "39;DETECTER/Surveillance continue de la sécurité/Supervision SSI",
+            "40;DETECTER/Surveillance continue de la sécurité/Attaques",
+            "41;DETECTER/Processus de détection/Détection",
+            "42;RÉPONDRE/Plan intervention/Gestion de crise",
+            "43;RÉPONDRE/Plan intervention/Gestion de crise/Simulation-Exercice",
+            "44;RÉPONDRE/Plan intervention/Réponse à incidents",
+            "45;RÉPONDRE/Communication/Connaissance juridique et réglementaire",
+            "46;RÉPONDRE/Analyse/Identification",
+            "47;RÉPONDRE/Analyse/Conservation de la preuve",
+            "48;RÉPONDRE/Analyse/Analyse",
+            "49;RÉPONDRE/Analyse/Analyse matérielle",
+            "50;RÉPONDRE/Atténuation/Accompagnement",
+            "51;RÉPONDRE/Atténuation/Remédiation",
+            "52;RÉPONDRE/Amélioration/Procédure interne",
+            "53;RÉTABLIR/Planification de la récupération/Gestion de crise",
+            "54;RÉTABLIR/Planification de la récupération/Sauvegarde",
+            "55;RÉTABLIR/Planification de la récupération/PCA-PRA",
+            "56;RÉTABLIR/Amélioration/Procédure interne",
+            "57;RÉTABLIR/Amélioration/Veille technologique-Exploitation",
+            "58;RÉTABLIR/Communication/Relation client",
+            "59;RÉTABLIR/Communication/Gestion de crise"
+         ]
+      },	    	  
+      "functionalContextCategory":{
+         "type":"integer",
+         "enum":[
+            1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72
+         ],
+         "referenceList":[
+            "1;Pilotage médico-économique",
+            "2;Production des soins cliniques",
+            "3;Production de soins médico-techniques",
+            "4;Recherche",
+            "5;Support",
+            "6;Infrastructures",
+            "7;Gestion Administrative du Patient",
+            "8;Gestion des actes et consultations externes",
+            "9;Facturation",
+            "10;Bureautique médicale",
+            "11;Gestion du dossier médical du patient",
+            "12;Gestion des dossiers d'anesthésie",
+            "13;Gestion des dossiers de réanimation",
+            "14;Gestion des dossiers transfusionnels",
+            "15;Gestion des dossiers RCP",
+            "16;Gestion des dossiers de dialyse",
+            "17;Gestion des dossiers HAD",
+            "18;Gestion du dossier de soins",
+            "19;Gestion des lits (planification)",
+            "20;Gestion des rendez vous et planification",
+            "21;Prescription de Médicaments",
+            "22;Médicaments - BDM",
+            "23;Prescription de  Produits Sanguins Labiles",
+            "24;Prescription de Chimiothérapies",
+            "25;Prescription d'Analyses médicales",
+            "26;Prescription d' Examens d'Imagerie",
+            "27;Prescription de Soins",
+            "28;Gestion des Blocs opératoires",
+            "29;Gestion de laboratoire de biologie",
+            "30;Serveur de résultats - biologie",
+            "31;Gestion de Laboratoire d'anatomocytopathologie",
+            "32;Pharmacie",
+            "33;Chimiothérapie",
+            "34;Traçabilité des DMI",
+            "35;Stérilisation",
+            "36;Médecine Nucléaire",
+            "37;Imagerie Médicale - SIR",
+            "38;Imagerie Médicale - PACS",
+            "39;Dépôt de produit sanguins labiles",
+            "40;Hémovigilance",
+            "41;Gestion des urgences",
+            "42;SAMU",
+            "43;PMSI MCO",
+            "44;PMSI SSR",
+            "45;PMSI PSY",
+            "46;Recueil d'activité et aide au codage",
+            "47;Outil de contrôle qualité",
+            "48;Constitution du FICHCOMP - MO",
+            "49;Constitution du FICHCOMP - DMI",
+            "50;Constitution du FICHCOMP - PIE",
+            "51;Constitution du FICHCOMP - PO",
+            "52;Constitution du FICHCOMP - PIP",
+            "53;Constitution du fichier VIDHOSP",
+            "54;Constitution du RSF / ACE",
+            "55;Constitution du RSS groupé",
+            "56;Gestion Economique et financière",
+            "57;Comptabilité analytique",
+            "58;GMAO - biomédical",
+            "59;Restauration",
+            "60;Transport des patients",
+            "61;GMAO - Services techniques",
+            "62;SSO",
+            "63;Système de Gestion des Ressources Humaines",
+            "64;Médecine du travail",
+            "65;Gestion des Vigilances",
+            "66;Gestion des Risques - Evenements indésirables",
+            "67;Gestion Documentaire",
+            "68;Questionnaires - Enquetes",
+            "69;Système décisionnel",
+            "70;Messagerie Sécurisée PS",
+            "71;Portail Extranet PS",
+            "72;Télémédecine",
+            "73;Plate-forme institutionnelle",
+            "74;Plate-forme associative"
+         ]
+      },
+
+      "technicalContextCategory":{
+         "type":"integer",
+         "enum":[
+            1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72
+         ],
+         "referenceList":[
+            "1;Application métier",
+            "2;Messagerie",
+            "3;Impression",
+            "4;Accès distants",
+            "5;Licences",
+            "6;Installations",
+            "7;Infrastructures à clés publiques",
+            "8;Capacitaire et maintenabilité",
+            "9;Performance",
+            "10;Sauvegardes et restaurations",
+            "11;Traçabilité des actions sur les applications métiers",
+            "12;Traçabilité des actions sur les applications de service",
+            "13;Exposition de contenus statiques",
+			"14;Gestion des VMs"
+         ]
+      },
+	    
+		"eventAnalysisType": {
+			"type": "integer",
+			"enum" : [1,2,3,4,5],
+						"referenceList" : [
+			"1;HOPEN1",
+			"2;HOPEN2",
+			"3;SUNES",
+			"4;SONS",
+			"5;CARE"
+			    ]
+		},	
+	  
+		"dateType": {
+			"type": "integer",
+			"enum" : [1,2,3,4,5,6,7,8,9],
+						"referenceList" : [
+			"1;Demande effective",
+			"2;Demande prévisionnelle",
+			"3;Demande annulée",
+			"4;Inscription effective",
+			"5;Inscription prévisionnelle",
+			"6;Inscription annulée",
+			"7;Réalisation effective",
+			"8;Réalisation prévisionnelle",
+			"9;Réalisation annulée"
+			    ]
+		},			
+      "stakeholderType":{
+         "type":"integer",
+         "enum":[
+            1, 2, 3
+         ],
+         "referenceList":[
+            "1;site",
+            "2;incorporatedGroup",
+            "3;thirdParty"
+         ]
+      },
+      "stakeholderIdType":{
+         "type":"integer",
+         "enum":[
+            1, 2, 3, 4, 5, 6
+         ],
+         "referenceList":[
+            "1;id_finess_plage",
+            "2;id_finess_geo",
+            "3;id_finess_jur",
+            "4;id_siren",
+            "5;id_siret",
+			"6;id_ght"
+         ]
+      },
+      "stakeholderNameType":{
+         "type":"integer",
+         "enum":[
+            1, 2
+         ],
+         "referenceList":[
+            "1;shortLabel",
+            "2;longLabel"		
+         ]
+      }, 
+      "stakeholderRoleType":{
+         "type":"integer",
+         "enum":[
+            1, 2, 3, 4
+         ],
+         "referenceList":[
+            "1;requester",
+            "2;serviceProvider",
+            "3;auditor",
+			"4;recipient"
+         ]
+      },
+      "tlp":{
+         "type":"string",
+         "enum":[
+            "red", "amber","green", "clear"
+         ],
+         "referenceList":[
+            "red;Diffusion limitée au seul périmètre interne d’une entité juridique, sur la base du besoin d’en connaître",
+            "amber;Diffusion limitée à quelques entités identifiées, liées par un engagement (ex: une communauté fermée)",
+            "green;Diffusion libre au sein d’une communauté (ouverte ou fermée) bien identifiée, repartage libre au sein de ces communautés (prestataires inclus)",
+			"clear;Diffusion publique, sans restriction, partage libre entre les différentes communautés, y compris sur Internet"
+         ]
+      }	  
+   }, 
+  "properties": {
+    "events": {
+      "type": "object",
+      "properties": {
+        "stakeholders": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "stakeholderId": {
+                  "type": "object",
+                  "properties": {
+                    "stakeholderIdType": {
+                      "type": "integer"
+                    },
+                    "__text": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "stakeholderIdType",
+                    "__text"
+                  ]
+                },
+                "stakeholderNameTypes": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "stakeholderNameType": {
+                          "type": "integer"
+                        },
+                        "__text": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "stakeholderNameType",
+                        "__text"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "stakeholderNameType": {
+                          "type": "integer"
+                        },
+                        "__text": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "stakeholderNameType",
+                        "__text"
+                      ]
+                    }
+                  ]
+                },
+                "stakeholderType": {
+                  "type": "integer"
+                },
+                "stakeholderRoleType": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "stakeholderId",
+                "stakeholderNameTypes",
+                "stakeholderType",
+                "stakeholderRoleType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "stakeholderId": {
+                  "type": "object",
+                  "properties": {
+                    "stakeholderIdType": {
+                      "type": "integer"
+                    },
+                    "__text": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "stakeholderIdType",
+                    "__text"
+                  ]
+                },
+                "stakeholderNameTypes": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "stakeholderNameType": {
+                          "type": "integer"
+                        },
+                        "__text": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "stakeholderNameType",
+                        "__text"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "stakeholderNameType": {
+                          "type": "integer"
+                        },
+                        "__text": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "stakeholderNameType",
+                        "__text"
+                      ]
+                    }
+                  ]
+                },
+                "stakeholderType": {
+                  "type": "integer"
+                },
+                "stakeholderRoleType": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "stakeholderId",
+                "stakeholderNameTypes",
+                "stakeholderType",
+                "stakeholderRoleType"
+              ]
+            }
+          ]
+        },
+        "event": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "stakeholders": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "stakeholderId": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "stakeholderIdType": {
+                                  "type": "integer"
+                                },
+                                "__text": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "stakeholderIdType",
+                                "__text"
+                              ]
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "stakeholderIdType": {
+                                  "type": "integer"
+                                },
+                                "__text": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "stakeholderIdType",
+                                "__text"
+                              ]
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "stakeholderIdType": {
+                                  "type": "integer"
+                                },
+                                "__text": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "stakeholderIdType",
+                                "__text"
+                              ]
+                            }
+                          ]
+                        },
+                        "stakeholderNameTypes": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "stakeholderNameType": {
+                                  "type": "integer"
+                                },
+                                "__text": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "stakeholderNameType",
+                                "__text"
+                              ]
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "stakeholderNameType": {
+                                  "type": "integer"
+                                },
+                                "__text": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "stakeholderNameType",
+                                "__text"
+                              ]
+                            }
+                          ]
+                        },
+                        "stakeholderType": {
+                          "type": "integer"
+                        },
+                        "stakeholderRoleType": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "stakeholderId",
+                        "stakeholderNameTypes",
+                        "stakeholderType",
+                        "stakeholderRoleType"
+                      ]
+                    }
+                  ]
+                },
+                "functionalContexts": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "functionalContextCategory": {
+                          "type": "integer"
+                        },
+                        "__text": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "functionalContextCategory",
+                        "__text"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "functionalContextCategory": {
+                          "type": "integer"
+                        },
+                        "__text": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "functionalContextCategory",
+                        "__text"
+                      ]
+                    }
+                  ]
+                },
+                "technicalContexts": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "technicalContextCategory": {
+                          "type": "integer"
+                        },
+                        "__text": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "technicalContextCategory",
+                        "__text"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "technicalContextCategory": {
+                          "type": "integer"
+                        },
+                        "__text": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "technicalContextCategory",
+                        "__text"
+                      ]
+                    }
+                  ]
+                },
+                "dates": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "dateType": {
+                          "type": "integer"
+                        },
+                        "__text": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "dateType",
+                        "__text"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "dateType": {
+                          "type": "integer"
+                        },
+                        "__text": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "dateType",
+                        "__text"
+                      ]
+                    }
+                  ]
+                },
+                "scope": {
+                  "type": "object",
+                  "properties": {
+                    "forest": {
+                      "type": "object",
+                      "properties": {
+                        "forestFqdn": {
+                          "type": "string"
+                        },
+                        "forestGuid": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "forestFqdn",
+                        "forestGuid"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "forest"
+                  ]
+                },
+                "outcome": {
+                  "type": "object",
+                  "properties": {
+                    "score": {
+                      "type": "integer"
+                    },
+                    "level": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "score",
+                    "level"
+                  ]
+                },
+                "tlp": {
+                  "type": "string"
+                },
+                "eventAnalysisType": {
+                  "type": "integer"
+                },
+                "eventType": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "stakeholders",
+                "functionalContexts",
+                "technicalContexts",
+                "dates",
+                "scope",
+                "outcome",
+                "tlp",
+                "eventAnalysisType",
+                "eventType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "stakeholders": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "stakeholderId": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "stakeholderIdType": {
+                                  "type": "integer"
+                                },
+                                "__text": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "stakeholderIdType",
+                                "__text"
+                              ]
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "stakeholderIdType": {
+                                  "type": "integer"
+                                },
+                                "__text": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "stakeholderIdType",
+                                "__text"
+                              ]
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "stakeholderIdType": {
+                                  "type": "integer"
+                                },
+                                "__text": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "stakeholderIdType",
+                                "__text"
+                              ]
+                            }
+                          ]
+                        },
+                        "stakeholderNameTypes": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "stakeholderNameType": {
+                                  "type": "integer"
+                                },
+                                "__text": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "stakeholderNameType",
+                                "__text"
+                              ]
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "stakeholderNameType": {
+                                  "type": "integer"
+                                },
+                                "__text": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "stakeholderNameType",
+                                "__text"
+                              ]
+                            }
+                          ]
+                        },
+                        "stakeholderType": {
+                          "type": "integer"
+                        },
+                        "stakeholderRoleType": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "stakeholderId",
+                        "stakeholderNameTypes",
+                        "stakeholderType",
+                        "stakeholderRoleType"
+                      ]
+                    }
+                  ]
+                },
+                "functionalContexts": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "functionalContextCategory": {
+                          "type": "integer"
+                        },
+                        "__text": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "functionalContextCategory",
+                        "__text"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "functionalContextCategory": {
+                          "type": "integer"
+                        },
+                        "__text": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "functionalContextCategory",
+                        "__text"
+                      ]
+                    }
+                  ]
+                },
+                "technicalContexts": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "technicalContextCategory": {
+                          "type": "integer"
+                        },
+                        "__text": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "technicalContextCategory",
+                        "__text"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "technicalContextCategory": {
+                          "type": "integer"
+                        },
+                        "__text": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "technicalContextCategory",
+                        "__text"
+                      ]
+                    }
+                  ]
+                },
+                "dates": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "dateType": {
+                          "type": "integer"
+                        },
+                        "__text": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "dateType",
+                        "__text"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "dateType": {
+                          "type": "integer"
+                        },
+                        "__text": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "dateType",
+                        "__text"
+                      ]
+                    }
+                  ]
+                },
+                "scopes": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "functionalContexts": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "functionalContextCategory": {
+                                  "type": "integer"
+                                },
+                                "__text": {
+                                  "type": "string"
+                                },
+                                "isPersonalData": {
+                                  "type": "boolean"
+                                },
+                                "isPersonalHealthcareData": {
+                                  "type": "boolean"
+                                },
+                                "userCount": {
+                                  "type": "integer"
+                                }
+                              },
+                              "required": [
+                                "functionalContextCategory",
+                                "__text",
+                                "isPersonalData",
+                                "isPersonalHealthcareData",
+                                "userCount"
+                              ]
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "functionalContextCategory": {
+                                  "type": "integer"
+                                },
+                                "__text": {
+                                  "type": "string"
+                                },
+                                "isPersonalData": {
+                                  "type": "boolean"
+                                },
+                                "isPersonalHealthcareData": {
+                                  "type": "boolean"
+                                },
+                                "userCount": {
+                                  "type": "integer"
+                                }
+                              },
+                              "required": [
+                                "functionalContextCategory",
+                                "__text",
+                                "isPersonalData",
+                                "isPersonalHealthcareData",
+                                "userCount"
+                              ]
+                            }
+                          ]
+                        },
+                        "technicalContexts": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "technicalContextCategory": {
+                                  "type": "integer"
+                                },
+                                "__text": {
+                                  "type": "string"
+                                },
+                                "isDynamic": {
+                                  "type": "boolean"
+                                },
+                                "isAuthenticatable": {
+                                  "type": "boolean"
+                                },
+                                "isOnCloud": {
+                                  "type": "boolean"
+                                }
+                              },
+                              "required": [
+                                "technicalContextCategory",
+                                "__text",
+                                "isDynamic",
+                                "isAuthenticatable",
+                                "isOnCloud"
+                              ]
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "technicalContextCategory": {
+                                  "type": "integer"
+                                },
+                                "__text": {
+                                  "type": "string"
+                                },
+                                "isDynamic": {
+                                  "type": "boolean"
+                                },
+                                "isAuthenticatable": {
+                                  "type": "boolean"
+                                },
+                                "isOnCloud": {
+                                  "type": "boolean"
+                                }
+                              },
+                              "required": [
+                                "technicalContextCategory",
+                                "__text",
+                                "isDynamic",
+                                "isAuthenticatable",
+                                "isOnCloud"
+                              ]
+                            }
+                          ]
+                        },
+                        "autonomousSystemNumbers": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "string"
+                            },
+                            {
+                              "type": "string"
+                            },
+                            {
+                              "type": "string"
+                            }
+                          ]
+                        },
+                        "domains": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "string"
+                            },
+                            {
+                              "type": "string"
+                            },
+                            {
+                              "type": "string"
+                            }
+                          ]
+                        },
+                        "subnetIpV4s": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "string"
+                            },
+                            {
+                              "type": "string"
+                            }
+                          ]
+                        },
+                        "subnetIpV6s": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "string"
+                            },
+                            {
+                              "type": "string"
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "functionalContexts",
+                        "technicalContexts",
+                        "autonomousSystemNumbers",
+                        "domains",
+                        "subnetIpV4s",
+                        "subnetIpV6s"
+                      ]
+                    }
+                  ]
+                },
+                "outcome": {
+                  "type": "object",
+                  "properties": {
+                    "level": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "level"
+                  ]
+                },
+                "tlp": {
+                  "type": "string"
+                },
+                "eventAnalysisType": {
+                  "type": "integer"
+                },
+                "eventType": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "stakeholders",
+                "functionalContexts",
+                "technicalContexts",
+                "dates",
+                "scopes",
+                "outcome",
+                "tlp",
+                "eventAnalysisType",
+                "eventType"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "stakeholders",
+        "event"
+      ]
+    }
+  },
+  "required": [
+    "events"
+  ]
+}
+
