@@ -61,6 +61,34 @@
           </div>
 				</div> <!-- cd-faq__content -->
 			</li>
+
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>Au niveau de l'objet "event", les objets functionalContexts et technicalContexts sont-ils optionnels ? Si non, que représentent-ils ?</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+            <p>Le suivi des actions CaRE D1 impose de renseigner la date de réalisation de l'audit, son niveau d'appréciation (selon les conventions du CERT-Santé), et les descriptifs des acteurs concernés. Les objets functionalContexts et technicalContexts permettent de qualifier le périmètre de l'audit, via des codes documentés (par défaut : code 6, dans functionalContext), et du texte libre en complément.</p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>
+
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>Dans l'objet scopes sous l'objet event, insère-t-on les adresses IP et sous-domaines etc. ?</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+            <p>Oui. L'objet scopes introduit des objets techniques (autonomousSystemNumbers/ASN, subnetIpV4s, subnetIpV6s) à renseigner dans la mesure du possible. La désignation de ces objets a été validée avec l'ANSSI. Des attributs ont par ailleurs été étudiés avec l'ANS (exemple : isOnCloud etc).</p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>
+
+						<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>Indique-t-on les ports et services ouverts ?<span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+            <p>Le profil CaRE D1 ne couvre pas ces éléments. Des extensions sont néanmoins à l'étude. L'objectif dudit profil est de partager les éléments fondamentaux requis pour le suivi du programme. Du reste, la démarche de conception du schéma d'interopérabilité (profil général) n'exclut aucunement ce type d'éléments à moyen terme - des extensions sont prêtes -.
+</p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>			
 			
 		</ul> <!-- cd-faq__group -->
 
@@ -119,7 +147,25 @@ Source complémentaire au CDC : OPSSIES BI V2 Interoperability Schema - version 
           </div>
 				</div> <!-- cd-faq__content -->
 			</li>	
-			
+
+						<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>Dans la partie "stakeholders", doit-on ajouter uniquement le nom de l'établissement concerné par les données ou doit-on également ajouter un autre destinataire ou le nom de notre entreprise ?
+</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+            <p>Le profil CaRE D1 privilégie la description des acteurs au niveau de l'événement. Ceci étant rappelé, les données communes à l'ensemble des événements peuvent être indiquées sous l'objet Events. Il s'agit d'y préciser, en pratique, le prestataire en charge de l'audit ("industriel CaRE D1", identifié par un SIREx) et la structure institutionnelle de contrôle (dans le cadre de CaRE D1 : l'ANS). Un exemple (cf entête de l'instance json) est disponible via le bandeau gauche, volet "Exemples d'instances / CaRE D1", incluant le descriptif de l'ANS.</p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>	
+
+							<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>À quoi correspond le champ stakeholderId ? Doit-on y mettre le numéro SIREN de l'établissement de santé ?</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+            <p>L'objet stakeholderId introduit un élément essentiel, couplé aux identifiants : la nature de la structure. Celle-ci peut être une "unité" (site) ou un "groupement" (incorporatedGroup). En pratique, le code "1" introduit un établissement de santé (hôpital ou clinique en tant qu'unité de "production"). Le code "2" introduit un groupement conventionnel (groupement hospitalier de territoire/GHT, groupement de coopération sanitaire/GCS). Il est tout à fait possible d'indiquer un SIREN (INSEE), en complément du FINESS (consulter le site : https://finess.esante.gouv.fr/fininter/jsp/rechercheSimple.jsp). La documentation du schéma d'intéropérabilité expose différents scenarii (consulter le volet Définitions/stakeholderIdType). </p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>			
 			
 		</ul> <!-- cd-faq__group -->
 
@@ -144,7 +190,34 @@ Source complémentaire au CDC : OPSSIES BI V2 Interoperability Schema - version 
 			</li>
 
 
+Où doit-on enregistrer les issues (problèmes)
 
+> Le profil CaRe D1 ne couvre pas ces éléments. Des extensions sont néanmoins à l'étude. L'objectif dudit profil est de partager les éléments fondamentaux requis pour le suivi du programme. Du reste, la démarche de conception du schéma d'interopérabilité (profil général) n'exclut aucunement ce type d'éléments à moyen terme.
+
+Doit-on mettre le niveau de sécurité quelque part ?
+
+> L'indice de conformité "CaRE D1" (selon les conventions du CERT-Santé) est embarqué via l'objet "outcome" et son attribut "level".
+
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>Indique-t-on les problèmes rencontrés ?</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+            <p>Le profil CaRe D1 ne couvre pas ces éléments. Des extensions sont néanmoins à l'étude. L'objectif dudit profil est de partager les éléments fondamentaux requis pour le suivi du programme. Du reste, la démarche de conception du schéma d'interopérabilité (profil général) n'exclut aucunement ce type d'éléments à moyen terme.
+</p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>
+			
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>Comment indiquer le niveau de sécurité ?</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+            <p>L'indice de conformité "CaRE D1" (selon les conventions du CERT-Santé) est embarqué via l'objet "outcome" et son attribut "level".</p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>
+			
+			
 
 			
 		</ul> <!-- cd-faq__group -->
