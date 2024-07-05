@@ -3,6 +3,12 @@
 instancesGenerator (alpha) permet de générer des instances json de test conformes au schéma d'interopérabilité OPSSIES-V2 v013.
 L'outil est mis à disposition à titre introductif.
 
+Téléchargement
+==============
+
+instancesGenerator est téléchargeable à l'adresse suivante :
+https://opssies.github.io/v013/opssiesToolkit/opssiesToolkit.zip
+
 Installation
 ============
 
@@ -49,7 +55,7 @@ Evolutions
 ==========
 
 - La version actuelle génére des données (FINESS, SIREN, qualifiants D1) pour une structure prédéfinie.
-- Une version couvrant le volet multi-événementiel pourrait être proposée, en cohérence avec le dispositif instancesChecker.
+- Une version couvrant le volet multi-événementiel pourrait être proposée, en cohérence avec le dispositif instancesChecker (à venir).
 
 
 
