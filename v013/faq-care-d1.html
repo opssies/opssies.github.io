@@ -45,6 +45,20 @@
 			</li>
 
 			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>Comment nommer le fichier d'instance json ?</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+            <p>Le fichier émis par l’industriel doit être nommé selon la convention suivante : <b>SOCIETE-D1-AAAAMMJJ-HHMMSS.json</b>, où 
+•	SOCIETE : correspond au nom de la société tel qu’il a été retenu pour la configuration de la boîte LockSelf (chaîne de caractère située après la chaîne « OPSSIES-« )
+•	D1 : désigne le domaine du programme CaRE ciblé
+•	AAAAMMJJ-HHMMSS : indique l’horodatage (Année Mois Jour Heure Minute Seconde) correspondant à la date et à l’horaire de génération du fichier par l’industriel. Pour rappel, l’horodatage de l’audit proprement dit (date de réalisation) est spécifié au niveau de l’événement, dans l’instance json, répondant au schéma décrit ci-dessous.
+•	json : indique le format du fichier 
+</p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>
+			
+			<li class="cd-faq__item">
 				<a class="cd-faq__trigger" href="#0"><span>Est-il nécessaire d'inclure dans les instances l'objet ExtractionDate, leur horodatage étant déjà précisé via le protocole de communication retenu ?</span></a>
 				<div class="cd-faq__content">
           <div class="text-component">
