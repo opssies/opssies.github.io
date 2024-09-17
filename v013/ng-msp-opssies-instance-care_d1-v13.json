@@ -4,16 +4,16 @@
             {
                 "stakeholderId": {
                     "stakeholderIdType": 4,
-                    "__text": "identifiant_siren_ex"
+                    "__text": "identifiant_siren_ex_industriel"
                 },
                 "stakeholderNameTypes": [
                     {
                         "stakeholderNameType": 1,
-                        "__text": "raison_sociale_abregee_ex"
+                        "__text": "raison_sociale_abregee_ex_industriel"
                     },
                     {
                         "stakeholderNameType": 2,
-                        "__text": "raison_sociale_ex"
+                        "__text": "raison_sociale_ex_industriel"
                     }
                 ],
                 "stakeholderType": 3,
@@ -40,16 +40,16 @@
             {
                 "stakeholderId": {
                     "stakeholderIdType": 3,
-                    "__text": "750712184"
+                    "__text": "TST-00"
                 },
                 "stakeholderNameTypes": [
                     {
                         "stakeholderNameType": 1,
-                        "__text": "AP-HP"
+                        "__text": "GHT TEST"
                     },
                     {
                         "stakeholderNameType": 2,
-                        "__text": "Assistance Publique des Hôpitaux de Paris"
+                        "__text": "GROUPEMENT HOSPITALIER DE TERRITOIRE TEST"
                     }
                 ],
                 "stakeholderType": 2,
@@ -63,17 +63,17 @@
                         "stakeholderId": [
                             {
                                 "stakeholderIdType": 2,
-                                "__text": "930100037"
+                                "__text": "000000001"
                             }
                         ],
                         "stakeholderNameTypes": [
                             {
                                 "stakeholderNameType": 1,
-                                "__text": "AVICENNE APHP"
+                                "__text": "HOPITAL TEST"
                             },
                             {
                                 "stakeholderNameType": 2,
-                                "__text": "HOPITAL UNIVERSITAIRE PARIS SITE AVICENNE APHP"
+                                "__text": "HOPITAL UNIVERSITAIRE TEST"
                             }
                         ],
                         "stakeholderType": 1,
