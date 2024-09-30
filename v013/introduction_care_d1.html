@@ -7,7 +7,7 @@
 <h3>Etape 3 : Pr&eacute;parer l'embarquement de votre structure</h3>
 <p>Contactez l'ANS et suivez les instructions fournies par email par l'&eacute;quipe CaRE/Industriels. Cette &eacute;tape n'est pas d&eacute;taillable par le pr&eacute;sent canal.</p>
 <h3>Etape 4 : Confirmer l'embarquement sur le volet Communication</h3>
-<p>4.1 T&eacute;l&eacute;chargez <a href="https://opssies.github.io/v013/ng-msp-opssies-instance-care_d1-v13.json" target="_blank" rel="noopener">l'instance illustrative CaRE D1</a></p>
+<p><h4>4.1 T&eacute;l&eacute;chargez <a href="https://opssies.github.io/v013/ng-msp-opssies-instance-care_d1-v13.json" target="_blank" rel="noopener">l'instance illustrative CaRE D1</a></p></h4>
 <p>Voici quelques points d'attention g&eacute;n&eacute;raux :</p>
 <ul>
 <li>pour CaRE D1, ne pas utiliser le sch&eacute;ma g&eacute;n&eacute;ral, mais valoriser l'instance illustrative CaRE D1</li>
@@ -16,15 +16,15 @@
 <li>pr&eacute;server les listes introduites par les crochets</li>
 <li>consulter la <a href="https://opssies.github.io/v013/faq-care-d1.html" target="_blank" rel="noopener">FAQ</a>&nbsp;d&eacute;di&eacute;e au profil CaRE D1 pour la composition des relev&eacute;s d'audits</li>
 </ul>
-<p>4.1.2 Modifiez l'instance t&eacute;l&eacute;charg&eacute;e en suivant pr&eacute;cis&eacute;ment les instructions ci-dessous. Sous l'objet <em>events</em>,&nbsp;modifiez le bloc d'identification de la structure r&eacute;alisant les audits d'exposition Internet (en pratique, le bloc indiquant votre structure), en indiquant son SIREN et ses raisons sociales longue et abr&eacute;g&eacute;e.</p>
+<p><h4>4.2 Modifiez l'instance t&eacute;l&eacute;charg&eacute;e en suivant pr&eacute;cis&eacute;ment les instructions ci-dessous. Sous l'objet <em>events</em>,&nbsp;modifiez le bloc d'identification de la structure r&eacute;alisant les audits d'exposition Internet (en pratique, le bloc indiquant votre structure), en indiquant son SIREN et ses raisons sociales longue et abr&eacute;g&eacute;e.</p></h4>
 <p>
   <code>   
  {<br /> "events": {<br /> "stakeholders": [<br /> {<br /> "stakeholderId": {<br /> "stakeholderIdType": 4,<br /> "__text": "<span style="color: #339966;">specifiez_ici_le_SIREN</span>"<br /> },<br /> "stakeholderNameTypes": [<br /> {<br /> "stakeholderNameType": 1,<br /> "__text": "<span style="color: #339966;">specifiez_ici_la_raison_sociale_abregee</span>"<br /> },<br /> {<br /> "stakeholderNameType": 2,<br /> "__text": "<span style="color: #339966;">specifiez_ici_la_raison_sociale_complete</span>"<br /> }<br /> ],<br /> "stakeholderType": 3,<br /> "stakeholderRoleType": 2<br /> },</p>
  </code>
-<p>4.1.3 D&eacute;posez l'instance JSON ainsi modifi&eacute;e sur la bo&icirc;te configur&eacute;e pour votre structure par la DNUM. Signalez ensuite &agrave; la DNUM que vous avez effectu&eacute; un d&eacute;p&ocirc;t d'instance de test.</p>
-<p>4.1.4 Attendez le retour du MSP (DNUM et DNS) pour poursuivre les op&eacute;rations sur le volet S&eacute;mantique du relev&eacute; d'audit.</p>
+<p><h4>4.3 D&eacute;posez l'instance JSON ainsi modifi&eacute;e sur la bo&icirc;te configur&eacute;e pour votre structure par la DNUM. Signalez ensuite &agrave; la DNUM que vous avez effectu&eacute; un d&eacute;p&ocirc;t d'instance de test.</p></h4>
+<p><h4>4.4 Attendez le retour du MSP (DNUM et DNS) pour poursuivre les op&eacute;rations sur le volet S&eacute;mantique du relev&eacute; d'audit.</p></h4>
 <h3>Etape 5 : Confirmer l'embarquement sur le volet S&eacute;mantique</h3>
-<p>5.1 Sur la base de l'instance de test modifi&eacute;e et valid&eacute;e par le MSP (DNUM et DNS), sous l'objet <em>events</em>, modifiez le bloc d'identification de la structure commanditaire des audits, applicable &agrave; l'ensemble des &eacute;v&eacute;nements d'audits (<em>event</em>)</p>
+<p><h4>5.1 Sur la base de l'instance de test modifi&eacute;e et valid&eacute;e par le MSP (DNUM et DNS), sous l'objet <em>events</em>, modifiez le bloc d'identification de la structure commanditaire des audits, applicable &agrave; l'ensemble des &eacute;v&eacute;nements d'audits (<em>event</em>)</p></h4>
 <p>Il peut s'agir ou bien d'un groupement ou bien d'un &eacute;tablissement de sant&eacute; autonome.</p>
 <p><code></code></p>
 <p>Dans le cas d'un groupement (ex. : GHT), utilisez le code suivant (en modifiant les identifiants et raisons sociales) :</p>
@@ -35,7 +35,7 @@
 <code>
 <p>{<br /> "stakeholderId": {<br /> "stakeholderIdType": 3,<br /> "__text": "<span style="color: #339966;">000000001</span>"<br /> },<br /> "stakeholderNameTypes": [<br /> {<br /> "stakeholderNameType": 1,<br /> "__text": "<span style="color: #339966;">CH TEST</span>"<br /> },<br /> {<br /> "stakeholderNameType": 2,<br /> "__text": "<span style="color: #339966;">CENTRE HOSPITALIER TEST</span>"<br /> }<br /> ],<br /> "stakeholderType": 2,<br /> "stakeholderRoleType": 1<br /> }</p>
 </code></p>
-<p>5.2 Sous l'objet <em>event</em>, modifiez le bloc d'identification de la structure audit&eacute;e et maximisez-en l'identification, afin de faciliter, en aval de la t&eacute;l&eacute;transmission du relev&eacute;, l'association de la prestation d'audit et de la structure audit&eacute;e :</p>
+<p><h4>5.2 Sous l'objet <em>event</em>, modifiez le bloc d'identification de la structure audit&eacute;e et maximisez-en l'identification, afin de faciliter, en aval de la t&eacute;l&eacute;transmission du relev&eacute;, l'association de la prestation d'audit et de la structure audit&eacute;e :</p></h4>
 <p><code>
 <p>"event": [<br /> {<br /> "stakeholders": [<br /> {<br /> "stakeholderId": [<br /> {<br /> "stakeholderIdType": 3,<br /> "__text": "<span style="color: #339966;">specifiez_ici_le_finess_juridique</span>"<br /> },</p>
 <p>{<br /> "stakeholderIdType": 6,<br /> "__text": "<span style="color: #339966;">specifiez_ici_le_trigramme_ght_si_applicable</span>"<br /> },</p>
@@ -43,22 +43,22 @@
 <p>{<br /> "stakeholderIdType": 4,<br /> "__text": "<span style="color: #339966;">specifiez_ici_le_siren_si_disponible</span>"<br /> },</p>
 <p>{<br /> "stakeholderIdType": 5,<br /> "__text": "<span style="color: #339966;">specifiez_ici_le_siret_si_disponible</span>"<br /> },<br /> ],<br /> "stakeholderNameTypes": [<br /> {<br /> "stakeholderNameType": 1,<br /> "__text": "<span style="color: #339966;">HOPITAL TEST</span>"<br /> },<br /> {<br /> "stakeholderNameType": 2,<br /> "__text": "<span style="color: #339966;">HOPITAL UNIVERSITAIRE TEST</span>"<br /> }<br /> ],<br /> "stakeholderType": <span style="color: #339966;">specifiez_ici_code_1_si_ES_code_2_si_GHT</span>,<br /> "stakeholderRoleType": 4<br /> }<br /> ],</p>
 </code></p>
-<p>5.3 Sous l'objet <em>event</em>, modifiez le bloc dates, en pr&eacute;cisant une seule date, celle correspondant &agrave; la r&eacute;alisation effective de l'audit. Il est ici recommand&eacute; de retenir l'horodatage associ&eacute; &agrave; l'ach&egrave;vement technique de l'audit (fin du scan) et non celui associ&eacute; &agrave; son initialisation.</p>
+<p><h4>5.3 Sous l'objet <em>event</em>, modifiez le bloc dates, en pr&eacute;cisant une seule date, celle correspondant &agrave; la r&eacute;alisation effective de l'audit. Il est ici recommand&eacute; de retenir l'horodatage associ&eacute; &agrave; l'ach&egrave;vement technique de l'audit (fin du scan) et non celui associ&eacute; &agrave; son initialisation.</p></h4>
 <p>Rappel important : pr&eacute;servez la liste, m&ecirc;me si une seule date est retenue ici.</p>
 <p><code>
 <p>"dates": [<br /> {<br /> "dateType": 7,<br /> "__text": "<span style="color: #339966;">specifiez_ici_la_date_de_realisation_de_l_audit_au_format_AAAAMMJJ-HHMMSS</span>"<br /> }<br /> ],</p>
 </code>
-<p>5.4&nbsp;Sous l'objet <em>event</em>, et sous l'objet <em>scopes</em>, modifiez les blocs de description des actifs audit&eacute;s.&nbsp;</p>
+<p><h4>5.4 Sous l'objet <em>event</em>, et sous l'objet <em>scopes</em>, modifiez les blocs de description des actifs audit&eacute;s.&nbsp;</p></h4>
 <p>Rappel important : les contextes fonctionnels et techniques sont exclusivement &agrave; renseigner sous l'objet <em>scopes</em>, et non &agrave; la racine <em>event</em> pour le profil CaRE D1. La description des actifs est recommand&eacute;e par l'Agence du Num&eacute;rique en Sant&eacute;, en particulier les adresses IP et les domaines.</p>
-<p>5.5 Sous l'objet <em>event</em>, pr&eacute;cisez le niveau d'appr&eacute;ciation (attribut <em>level</em>) selon les r&egrave;gles &eacute;tablies par le CERT-Sant&eacute;.</p>
+<p><h4>5.5 Sous l'objet <em>event</em>, pr&eacute;cisez le niveau d'appr&eacute;ciation (attribut <em>level</em>) selon les r&egrave;gles &eacute;tablies par le CERT-Sant&eacute;.</p></h4>
 <code>
   <p>"outcome": {<br /> "level": <span style="color: #339966;">x</span><br /> },</p>
 </code>
-<p>5.6 Pr&eacute;servez les qualifiants d&eacute;crivant finalement l'&eacute;v&eacute;nement :</p>
+<p><h4>5.6 Pr&eacute;servez les qualifiants d&eacute;crivant finalement l'&eacute;v&eacute;nement :</p></h4>
   <code>
 <p>"tlp": "amber",<br /> "eventAnalysisType": 5,<br /> "eventType": 29</p>
     </code>
 <p>Note : vous retrouverez l'ensemble des qualifiants et sc&eacute;narii des croisement des qualifiants dans la section "D&eacute;finitions" de la documentation du sch&eacute;ma d'int&eacute;rop&eacute;rabilit&eacute;. N'h&eacute;sitez pas &agrave; consulter la <a href="https://opssies.github.io/v013/faq-care-d1.html" target="_blank" rel="noopener">FAQ du profil CaRE D1</a>, r&eacute;guli&egrave;rement enrichie.</p>
-<p>5.7&nbsp; D&eacute;posez l'instance JSON ainsi modifi&eacute;e sur la bo&icirc;te configur&eacute;e pour votre structure par la DNUM. Signalez ensuite &agrave; la DNUM que vous avez effectu&eacute; un d&eacute;p&ocirc;t d'instance avec des donn&eacute;es de production.</p>
-<p>5.8 Attendez le retour du MSP (DNUM et DNS) pour basculer d&eacute;finitivement en mode production, et communiquer officiellement sur votre service de t&eacute;l&eacute;transmission de relev&eacute;s CaRE D1 aupr&egrave;s de vos partenaires hospitaliers.</p>
+<p><h4>5.7 D&eacute;posez l'instance JSON ainsi modifi&eacute;e sur la bo&icirc;te configur&eacute;e pour votre structure par la DNUM. Signalez ensuite &agrave; la DNUM que vous avez effectu&eacute; un d&eacute;p&ocirc;t d'instance avec des donn&eacute;es de production.</p></h4>
+<p><h4>5.8 Attendez le retour du MSP (DNUM et DNS) pour basculer d&eacute;finitivement en mode production, et communiquer officiellement sur votre service de t&eacute;l&eacute;transmission de relev&eacute;s CaRE D1 aupr&egrave;s de vos partenaires hospitaliers.</p></h4>
 <p>&nbsp;</p>
