@@ -7,7 +7,7 @@ Téléchargement
 ==============
 
 OpssiesD1JsonSchemaValidator est téléchargeable à l'adresse suivante :
-https://opssies.github.io/v013/OpssiesD1JsonSchemaValidator/OpssiesD1JsonSchemaValidator.zip
+https://opssies.github.io/v013/opssiesToolkit/instancesChecker/OpssiesD1JsonSchemaValidator.zip
 
 Installation
 ============
