@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Model",
+  "title": "Schema CaRE D1",
   "type": "object",
   "properties": {
     "events": {
