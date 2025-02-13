@@ -1,0 +1,238 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Model",
+  "type": "object",
+  "properties": {
+    "events": {
+      "type": "object",
+      "properties": {
+        "stakeholders": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "stakeholderId": {
+                "type": "object",
+                "properties": {
+                  "stakeholderIdType": {
+                    "type": "number"
+                  },
+                  "__text": {
+                    "type": "string"
+                  }
+                }
+              },
+              "stakeholderNameTypes": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "stakeholderNameType": {
+                      "type": "number"
+                    },
+                    "__text": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "stakeholderNameType",
+                    "__text"
+                  ]
+                }
+              },
+              "stakeholderType": {
+                "type": "number"
+              },
+              "stakeholderRoleType": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "stakeholderId",
+              "stakeholderNameTypes",
+              "stakeholderType",
+              "stakeholderRoleType"
+            ]
+          }
+        },
+        "event": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "stakeholders": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "stakeholderId": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "stakeholderIdType": {
+                            "type": "number"
+                          },
+                          "__text": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "stakeholderNameTypes": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "stakeholderNameType": {
+                            "type": "number"
+                          },
+                          "__text": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "stakeholderNameType",
+                          "__text"
+                        ]
+                      }
+                    },
+                    "stakeholderType": {
+                      "type": "number"
+                    },
+                    "stakeholderRoleType": {
+                      "type": "number"
+                    }
+                  }
+                }
+              },
+              "dates": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "dateType": {
+                      "type": "number"
+                    },
+                    "__text": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "scopes": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "functionalContexts": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "functionalContextCategory": {
+                            "type": "number"
+                          },
+                          "__text": {
+                            "type": "string"
+                          },
+                          "isPersonalData": {
+                            "type": "boolean"
+                          },
+                          "isPersonalHealthcareData": {
+                            "type": "boolean"
+                          },
+                          "userCount": {
+                            "type": "number"
+                          }
+                        },
+                        "required": [
+                          "functionalContextCategory",
+                          "__text",
+                          "isPersonalData",
+                          "isPersonalHealthcareData",
+                          "userCount"
+                        ]
+                      }
+                    },
+                    "technicalContexts": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "technicalContextCategory": {
+                            "type": "number"
+                          },
+                          "__text": {
+                            "type": "string"
+                          },
+                          "isDynamic": {
+                            "type": "boolean"
+                          },
+                          "isAuthenticatable": {
+                            "type": "boolean"
+                          },
+                          "isOnCloud": {
+                            "type": "boolean"
+                          }
+                        },
+                        "required": [
+                          "technicalContextCategory",
+                          "__text",
+                          "isDynamic",
+                          "isAuthenticatable",
+                          "isOnCloud"
+                        ]
+                      }
+                    },
+                    "autonomousSystemNumbers": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "domains": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "subnetIpV4s": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "subnetIpV6s": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              },
+              "outcome": {
+                "type": "object",
+                "properties": {
+                  "level": {
+                    "type": "number"
+                  }
+                }
+              },
+              "tlp": {
+                "type": "string"
+              },
+              "eventAnalysisType": {
+                "type": "number"
+              },
+              "eventType": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
