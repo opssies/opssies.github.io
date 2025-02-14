@@ -47,7 +47,7 @@
 <code>
 <p>{<br /> "stakeholderId": {<br /> "stakeholderIdType": 3,<br /> "__text": "<span style="color: #339966;">000000001</span>"<br /> },<br /> "stakeholderNameTypes": [<br /> {<br /> "stakeholderNameType": 1,<br /> "__text": "<span style="color: #339966;">CH TEST</span>"<br /> },<br /> {<br /> "stakeholderNameType": 2,<br /> "__text": "<span style="color: #339966;">CENTRE HOSPITALIER TEST</span>"<br /> }<br /> ],<br /> "stakeholderType": 2,<br /> "stakeholderRoleType": 1<br /> }</p>
 </code></p>
-<p><h4>5.2 Sous l'objet <em>event</em>, modifiez le bloc d'identification de la structure audit&eacute;e et maximisez-en l'identification, afin de faciliter, en aval de la t&eacute;l&eacute;transmission du relev&eacute;, l'association de la prestation d'audit et de la structure audit&eacute;e :</p></h4>
+<p><h4>5.2 Sous l'objet <em>event</em>, modifiez le bloc d'identification de la structure audit&eacute;e et maximisez-en l'identification, afin de faciliter, en aval de la t&eacute;l&eacute;transmission du relev&eacute;, l'association de la prestation d'audit et de la structure audit&eacute;e.</p><b>Note importante :</b> un rôle donné ne peut pas être attribué à plus d'un acteur dans un élément <i>event</i>. Par exemple, sous <i>event</i>, il ne peut pas y avoir plusieurs acteurs dont le rôle est introduit par le code 4, mais un seul (en pratique, une structure auditée).</h4>
 <p><code>
 <p>"event": [<br /> {<br /> "stakeholders": [<br /> {<br /> "stakeholderId": [<br /> {<br /> "stakeholderIdType": 3,<br /> "__text": "<span style="color: #339966;">specifiez_ici_le_finess_juridique</span>"<br /> },</p>
 <p>{<br /> "stakeholderIdType": 6,<br /> "__text": "<span style="color: #339966;">specifiez_ici_le_trigramme_ght_si_applicable</span>"<br /> },</p>
